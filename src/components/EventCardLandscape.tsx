@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BASE_URL } from "../config";
 
 type EventType = {
   id: number;
@@ -85,7 +86,7 @@ export default function EventsList() {
   const [events, setEvents] = useState<EventType[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/events/upcoming/")
+    fetch(`${BASE_URL}/api/events/upcoming/`)
       .then((res) => res.json())
       .then((data) => {
         const formattedEvents = data.map((event: any) => ({

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import pearlBackgroundImgSrc from "../assets/images/pearl_background.png";
 import EventCard from "../components/EventCard";
+import { BASE_URL } from "../config";
 
 type EventData = {
   imgName: string;
@@ -36,7 +37,7 @@ function Events({ heading = "Events" }) {
   const [events, setEvents] = useState<EventData[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/events/completed/")
+    fetch(`${BASE_URL}/api/events/completed/`)
       .then((res) => res.json())
       .then((data) => {
         const processed = data.slice(0, 6).map((item: any) => ({
