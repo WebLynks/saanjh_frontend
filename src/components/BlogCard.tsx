@@ -23,7 +23,7 @@ function BlogCard({
   slug,
 }: Blog) {
 
-  const { loading, image } = useImage(cover_image);
+  const { loading } = useImage(cover_image);
 
   return (
     <div className="col-span-3 p-8 hover:bg-pink-100 md:col-span-1">

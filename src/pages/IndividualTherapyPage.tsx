@@ -182,7 +182,7 @@ function IndividualTherapyPage() {
             },
             {},
           ),
-        ).map(([year, certs], index, arr) => (
+        ).map(([year, certs], index) => (
           <div key={year} className="flex gap-6">
             {/* Timeline bar + dot */}
             <div className="flex flex-col items-center">
