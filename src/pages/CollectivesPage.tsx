@@ -49,7 +49,7 @@ export default function CollectivesPage() {
       <div className="mx-auto grid max-w-7xl gap-10 px-0 pb-8 pt-20 md:grid-cols-2">
         <div>
           <img
-            src="src/assets/images/therapy_visual.png"
+            src='/therapy_visual.png'
             alt="Therapy visual"
             className="rounded-lg shadow-md"
           />
