@@ -1,9 +1,32 @@
 import UpdateCard from "../components/UpdateCard";
-import { Blog, fetchBlogs } from "../services/blogService";
+import { useEffect, useState } from "react";
+import { Blog } from "../services/blogService";
+import { BASE_URL } from "../config/env";
 
 function Updates() {
-  const blogs: Blog[] = fetchBlogs().slice(0, 3);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
   const bgColors = ["mango", "sapphire", "iris"];
+
+  useEffect(() => {
+    const fetchLatestBlogs = async () => {
+      try {
+        const res = await fetch(`${BASE_URL}/api/blogs/`);
+        const data: Blog[] = await res.json();
+
+        const sorted = data
+          .sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+          )
+          .slice(0, 3);
+
+        setBlogs(sorted);
+      } catch (err) {
+        console.error("Error fetching blogs:", err);
+      }
+    };
+
+    fetchLatestBlogs();
+  }, []);
 
   return (
     <>
