@@ -10,7 +10,7 @@ function Updates() {
   useEffect(() => {
     const fetchLatestBlogs = async () => {
       try {
-        const res = await fetch(`${BASE_URL}/api/blogs/`);
+        const res = await fetch(`${BASE_URL}/api/blogposts/`);
         const data: Blog[] = await res.json();
 
         const sorted = data
