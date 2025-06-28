@@ -45,7 +45,7 @@ function EventCardLandscape({
     <div className="flex flex-col gap-8 py-8 md:h-96 md:flex-row lg:gap-12 xl:gap-16">
       <div className={`w-full md:w-5/12 lg:w-4/12`}>
         <div className={`md:h-4/5 xl:h-full`}>
-          <img className="h-full w-full object-fill" src={`http://localhost:8000${imgUrl}`} alt={name} />
+          <img className="h-full w-full object-fill" src={`${BASE_URL}${imgUrl}`} alt={name} />
         </div>
       </div>
       <div className="flex w-full flex-col space-y-8 md:col-span-8 md:w-7/12 lg:w-8/12">
