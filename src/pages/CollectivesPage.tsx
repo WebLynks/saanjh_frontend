@@ -40,16 +40,16 @@ export default function CollectivesPage() {
     <div className="text-gray-900">
       {/* Hero */}
       <div className="mt-16 flex h-[50vh] w-full items-center justify-center bg-[url('/individual_therapy_header.png')] bg-cover bg-center md:mt-0">
-        <h1 className="font-sans-black text-5xl text-white drop-shadow-lg">
+        <h1 className="font-sans-black px-4 md:px-0 text-5xl text-white drop-shadow-lg">
           Discover Our Collectives
         </h1>
       </div>
 
       {/* What Therapy Means To Us */}
-      <div className="mx-auto grid max-w-7xl gap-10 px-0 pb-8 pt-20 md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 md:px-0 pb-8 pt-20 md:grid-cols-2">
         <div>
           <img
-            src='/therapy_visual.png'
+            src="/therapy_visual.png"
             alt="Therapy visual"
             className="rounded-lg shadow-md"
           />
@@ -82,15 +82,17 @@ export default function CollectivesPage() {
         <div className="grid gap-8 md:grid-cols-2">
           {videos.map((video, index) => (
             <div key={index} className="w-full">
-              <div
-                className="aspect-video overflow-hidden rounded-lg"
-                dangerouslySetInnerHTML={{ __html: video.iframe_code }}
-              />
+              <div className="relative aspect-video w-full max-w-full overflow-hidden rounded-lg">
+                <div
+                  className="absolute inset-0"
+                  dangerouslySetInnerHTML={{ __html: video.iframe_code }}
+                />
+              </div>
               {video.title && (
-            <p className="mt-1 font-sans text-xl text-gray-900 leading-snug">
-              {video.title}
-            </p>              
-          )}
+                <p className="mt-1 font-sans text-xl leading-snug text-gray-900">
+                  {video.title}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -119,13 +121,14 @@ export default function CollectivesPage() {
                 <h3 className="font-sans-black text-2xl text-gray-900">
                   {therapist.name}
                 </h3>
-                <p className="line-clamp-4 font-sans-regular text-md leading-relaxed text-gray-600">
+                <p className="text-md line-clamp-4 font-sans-regular leading-relaxed text-gray-600">
                   {therapist.description.split(" ").slice(0, 90).join(" ")}...
                 </p>
-              <div className="mt-2 font-sans-black text-sm text-mango">
-                {therapist.years_of_experience ? `${therapist.years_of_experience} Years of Experience` : ""}
-              </div>
-
+                <div className="mt-2 font-sans-black text-sm text-mango">
+                  {therapist.years_of_experience
+                    ? `${therapist.years_of_experience} Years of Experience`
+                    : ""}
+                </div>
               </div>
             </Link>
           ))}
