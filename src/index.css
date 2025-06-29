@@ -15,3 +15,11 @@
 * {
   letter-spacing: -0.025em;
 }
+
+/* make any iframe inside an .aspect-video fill 100% */
+.aspect-video iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
+
