@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-
-const defaultTheme = require("tailwindcss/defaultTheme");
+import typography from '@tailwindcss/typography'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  plugins: [typography],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Verdana", ...defaultTheme.fontFamily.sans],
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
         "sans-black": ["ProductSansBlack", ...defaultTheme.fontFamily.sans],
         "sans-regular": ["ProductSansRegular", ...defaultTheme.fontFamily.sans],
       },

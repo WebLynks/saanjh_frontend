@@ -70,7 +70,7 @@ export default function IndividualBlogPage() {
         </div>
 
         {/* Body */}
-        <div className="prose prose-lg blog-content max-w-none text-gray-800">
+        <div className="prose prose-lg prose-sans blog-content max-w-none text-gray-800">
           <div dangerouslySetInnerHTML={{ __html: blog.body }} />
         </div>
       </div>

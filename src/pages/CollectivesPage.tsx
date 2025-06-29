@@ -58,7 +58,7 @@ export default function CollectivesPage() {
           <h2 className="mb-4 font-sans-black text-5xl">
             What Therapy Means To Us
           </h2>
-          <p className="font-sans-regular text-lg leading-relaxed">
+          <p className="text-md leading-relaxed">
             At Saanjh, therapy is not just about addressing problems — it's a
             journey of discovering your truest self. We believe that healing
             starts when you're truly heard, seen, and supported.
@@ -89,7 +89,7 @@ export default function CollectivesPage() {
                 />
               </div>
               {video.title && (
-                <p className="mt-1 font-sans text-xl leading-snug text-gray-900">
+                <p className="mt-3 text-l md:text-xl leading-snug text-gray-900">
                   {video.title}
                 </p>
               )}
@@ -121,7 +121,7 @@ export default function CollectivesPage() {
                 <h3 className="font-sans-black text-2xl text-gray-900">
                   {therapist.name}
                 </h3>
-                <p className="text-md line-clamp-4 font-sans-regular leading-relaxed text-gray-600">
+                <p className="text-md line-clamp-4 leading-relaxed text-gray-600">
                   {therapist.description.split(" ").slice(0, 90).join(" ")}...
                 </p>
                 <div className="mt-2 font-sans-black text-sm text-mango">
