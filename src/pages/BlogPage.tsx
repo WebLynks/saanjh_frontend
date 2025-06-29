@@ -38,7 +38,7 @@ function BlogPage() {
 
   return (
     <div>
-      <div className="flex flex-col gap-0 md:flex-row">
+      <div className="flex flex-col gap-0 pt-20 md:pt-0 md:flex-row">
         <div className="w-full bg-pink-100 md:w-1/2">
           <img
             className="h-[50dvh] w-full object-cover sm:h-[90dvh] md:h-[85dvh] lg:h-[88dvh] xl:h-[92dvh] 2xl:h-[95dvh]"
