@@ -118,7 +118,7 @@ function Header() {
           </nav>
         </div>
         <div className="hidden rounded-full bg-pink-50 px-3 py-2 text-sm uppercase text-sunset md:block">
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/resources" onClick={toggleMenu}>
             Resources
           </Link>
         </div>
@@ -191,7 +191,7 @@ function Header() {
           <Link to="/contact" onClick={toggleMenu}>
             Contact
           </Link>
-          <Link to="/" onClick={toggleMenu}>
+          <Link to="/resources" onClick={toggleMenu}>
             Resources
           </Link>
         </nav>
