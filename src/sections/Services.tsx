@@ -23,7 +23,7 @@ function Services() {
           name="Individual Therapy"
           imgName="therapy_transparent"
           bgColor="iris"
-          link="/services/individual-therapy"
+          link="/services/collectives"
         />
       </div>
     </div>

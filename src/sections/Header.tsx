@@ -18,6 +18,11 @@ function Header() {
   const [isAtTop, setIsAtTop] = useState(true);
 
   const handleScroll = () => {
+    if (window.innerWidth < 768) {
+      setIsAtTop(false);
+      return;
+    }
+
     if (window.scrollY <= 50) {
       setIsAtTop(true);
     } else {
