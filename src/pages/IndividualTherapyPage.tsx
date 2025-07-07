@@ -1,4 +1,3 @@
-import individualTherapyHeader from "/individual_therapy_header.png";
 import individualTherapyLine from "../assets/images/IndividualTherapyLine.png";
 import saanjhLogo from "../assets/images/saanjh_logo.png";
 import { useParams } from "react-router";
