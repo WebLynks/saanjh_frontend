@@ -10,12 +10,12 @@ interface Therapist {
   years_of_experience: string;
 }
 
-interface YouTubeVideo {
-  title: string;
-  iframe_code: string;
-  description: string;
-  created_at: string;
-}
+// interface YouTubeVideo {
+//   title: string;
+//   iframe_code: string;
+//   description: string;
+//   created_at: string;
+// }
 
 export default function CollectivesPage() {
   const [therapists, setTherapists] = useState<Therapist[]>([]);
@@ -27,12 +27,12 @@ export default function CollectivesPage() {
       .catch((err) => console.error("Error fetching therapists:", err));
   }, []);
 
-  const [videos, setVideos] = useState<YouTubeVideo[]>([]);
+  // const [videos, setVideos] = useState<YouTubeVideo[]>([]);
 
   useEffect(() => {
     fetch(`${BASE_URL}/api/youtube/`)
       .then((res) => res.json())
-      .then((data) => setVideos(data))
+      // .then((data) => setVideos(data))
       .catch((err) => console.error("Failed to fetch YouTube videos:", err));
   }, []);
 
