@@ -4,7 +4,7 @@ import EventCard from "../components/EventCard";
 import { BASE_URL } from "../config";
 
 type EventData = {
-  imgName: string;
+  imgUrl: string;
   name: string;
   date: string;
   amount: string;
@@ -41,7 +41,7 @@ function Events({ heading = "Events" }) {
       .then((res) => res.json())
       .then((data) => {
         const processed = data.slice(0, 6).map((item: any) => ({
-          imgName: item.imgName || "event1", // fallback if imgName missing
+          imgUrl: item.image,  // fallback if imgName missing
           name: item.title,
           date: formatDate(item.date),
           amount: item.amount || "₹300 - ₹500",
@@ -68,7 +68,7 @@ function Events({ heading = "Events" }) {
           {events.map((event, index) => (
             <EventCard
               key={index}
-              imgName={event.imgName}
+              imgUrl={event.imgUrl}
               name={event.name}
               date={event.date}
               amount={event.amount}

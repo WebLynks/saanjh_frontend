@@ -77,7 +77,7 @@ export default function CollectivesPage() {
       </div>
 
       {/* Explore Our Videos */}
-      <div className="mx-auto max-w-7xl px-4 pb-6 pt-12">
+      {/* <div className="mx-auto max-w-7xl px-4 pb-6 pt-12">
         <h2 className="mb-8 font-sans-black text-5xl">Explore Our Videos</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {videos.map((video, index) => (
@@ -96,7 +96,7 @@ export default function CollectivesPage() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Meet Our Therapists */}
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-12">
