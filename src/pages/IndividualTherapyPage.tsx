@@ -45,8 +45,8 @@ function IndividualTherapyPage() {
 
   return (
     <>
-      <div className="pb-24 pt-36">
-        <div
+      <div className="pb-24">
+        {/* <div
           className={`bg-none bg-contain bg-[42dvw_0px] bg-no-repeat px-[10dvw] md:bg-individual-therapy lg:bg-[45dvw_0px] lg:max-xl:px-[5dvw] xl:bg-[50dvw_0px] 2xl:bg-[55dvw_0px]`}
         >
           <div className="w-12/12 flex flex-col items-start justify-center gap-8 md:w-7/12">
@@ -80,17 +80,21 @@ function IndividualTherapyPage() {
               </div>
             </div>
           </div>
-        </div>
-        <img
+        </div> */}
+        {/* <img
           className="mt-8 h-auto w-full object-contain md:hidden"
           src={individualTherapyHeader}
           alt="Individual Therapy Header"
-        />
+        /> */}
       </div>
-      <div className="border-y">
-        <div className="grid grid-cols-2">
-          <div className="col-span-2 md:col-span-1">
-            <img src={therapist?.image} alt={therapist?.name} />
+      <div className="border-y pb-10 pt-10">
+        <div className="grid grid-cols-2 items-center">
+          <div className="col-span-2 md:col-span-1 md:flex md:justify-center">
+            <img
+              src={therapist?.image}
+              alt={therapist?.name}
+              className="h-auto w-full rounded-lg object-cover shadow-md md:w-96 lg:w-[35rem]"
+            />
           </div>
           <div className="col-span-2 md:col-span-1">
             <div className="flex h-full flex-col justify-center gap-4 px-[10dvw] py-16 md:px-[5dvw]">
@@ -188,7 +192,7 @@ function IndividualTherapyPage() {
             <div className="flex flex-col items-center">
               {index !== 0 && <div className="h-5 w-0.5 bg-sunset" />}
               <div className="size-3 rounded-full bg-mango" />
-              <div className="flex-1 w-0.5 bg-sunset" />
+              <div className="w-0.5 flex-1 bg-sunset" />
             </div>
 
             {/* Content */}

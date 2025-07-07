@@ -11,6 +11,7 @@ type EventType = {
   timing: string;
   details: string;
   isRegisterOption: boolean;
+  link:string;
 };
 
 function formatDate(isoDate: string): string {
@@ -40,6 +41,7 @@ function EventCardLandscape({
   timing,
   details,
   isRegisterOption,
+  link,
 }: EventType) {
   return (
     <div className="flex flex-col gap-8 py-8 md:h-96 md:flex-row lg:gap-12 xl:gap-16">
@@ -67,7 +69,7 @@ function EventCardLandscape({
         </div>
         {isRegisterOption && (
           <div className="flex items-center justify-end">
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <button
                 type="button"
                 className="rounded-xl bg-mango px-8 py-2 lg:text-lg 2xl:text-xl"
@@ -99,6 +101,7 @@ export default function EventsList() {
           timing: event.timing || "",
           details: event.description,
           isRegisterOption: event.is_register_option,
+          link: event.link || "", 
         }));
         setEvents(formattedEvents);
       });
