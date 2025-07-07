@@ -21,7 +21,7 @@ function ContactPage() {
         </div>
         <div className="grid grid-cols-12 space-x-8">
           <div className="col-span-5 space-y-4">
-            <div className="font-sans-black text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
+            <div className="font-sans-regular text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
               Phone
             </div>
             <a
@@ -33,7 +33,7 @@ function ContactPage() {
             </a>
           </div>
           <div className="col-span-7 space-y-4">
-            <div className="font-sans-black text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
+            <div className="font-sans-regular text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
               Location
             </div>
             <div className="text-lg 2xl:text-xl">Mumbai, Nagpur</div>
@@ -41,7 +41,7 @@ function ContactPage() {
         </div>
         <div className="grid grid-cols-12 max-xl:gap-8 xl:space-x-8">
           <div className="col-span-5 space-y-4">
-            <div className="font-sans-black text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
+            <div className="font-sans-regular text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
               Email
             </div>
             <a
@@ -54,7 +54,7 @@ function ContactPage() {
             </a>
           </div>
           <div className="col-span-12 space-y-4 xl:col-span-7">
-            <div className="font-sans-black text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
+            <div className="font-sans-regular text-2xl tracking-tighter text-sunset opacity-90 2xl:text-3xl">
               Follow Us
             </div>
             <div className="flex space-x-4">
