@@ -128,7 +128,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="italic">+91 9373324053</div>
+              <div className="">+91 9373324053</div>
             </a>
           </div>
         </div>
