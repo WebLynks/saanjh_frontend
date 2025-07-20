@@ -56,7 +56,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 z-10 w-full font-sans-black tracking-tighter text-gray-900 opacity-90">
+    <header className="fixed top-0 z-50 w-full font-sans-black tracking-tighter text-gray-900 opacity-90">
       <div
         className={`fixed top-0 flex h-20 w-full items-center justify-between ${isAtTop && !isPathIncludeWhitePages ? "bg-transparent" : "bg-cover"} px-[5vw] transition-all duration-500 ease-in-out`}
         style={{
