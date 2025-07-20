@@ -14,6 +14,8 @@ import WorkplaceWellbeingPage from "./pages/WorkplaceWellbeingPage.tsx";
 import IndividualBlogPage from "./pages/IndividualBlogPage.tsx";
 import CollectivesPage from "./pages/CollectivesPage";
 import Resources from "./pages/Resources";
+import OurCollectivesPage from './pages/OurCollectivesPages.tsx';
+
 
 
 createRoot(document.getElementById("root")!).render(
@@ -27,6 +29,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="blogs" element={<Blog />} />
             <Route path="blogs/:slug" element={<IndividualBlogPage />} />
             <Route path="about-us" element={<AboutUsPage />} />
+            <Route path="/our-collectives" element={<OurCollectivesPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="services">

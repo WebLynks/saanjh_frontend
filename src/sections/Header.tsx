@@ -14,7 +14,7 @@ function Header() {
     location.pathname.includes("/about-us");
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState("");
   const [isAtTop, setIsAtTop] = useState(true);
 
   const handleScroll = () => {
@@ -30,9 +30,9 @@ function Header() {
     }
   };
 
-  const toggleMobileDropdown = () => {
-    setIsMobileDropdownOpen(!isMobileDropdownOpen);
-  };
+  // const toggleMobileDropdown = () => {
+  //   setIsMobileDropdownOpen(!isMobileDropdownOpen);
+  // };
 
   const handleLogoClick = () => {
     navigate("/");
@@ -77,9 +77,49 @@ function Header() {
             <Link to="/" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/about-us" onClick={toggleMenu}>
-              About Us
-            </Link>
+            {/* ABOUT US DROPDOWN (Desktop) */}
+            <div className="group relative inline-block">
+              <Link
+                to="/about-us"
+                className="inline-flex items-center uppercase focus:outline-none"
+                onClick={toggleMenu}
+              >
+                About Us
+                {/* <svg
+                  className="ml-1 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg> */}
+              </Link>
+              <div className="absolute right-0 z-20 mt-2 w-56 rounded-md bg-pink-50 opacity-0 shadow-lg ring-1 ring-black ring-opacity-5 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="py-1" role="menu">
+                  <Link
+                    to="/about-us"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={toggleMenu}
+                  >
+                    Our Team
+                  </Link>
+                  <Link
+                    to="/our-collectives"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={toggleMenu}
+                  >
+                    Our Collectives
+                  </Link>
+                </div>
+                <div className="absolute -top-2 right-0 h-0 w-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-pink-50"></div>
+              </div>
+            </div>
+
             <Link to="/blogs" onClick={toggleMenu}>
               Blogs
             </Link>
@@ -148,26 +188,67 @@ function Header() {
           <Link to="/" onClick={toggleMenu}>
             Home
           </Link>
-          <Link to="/about-us" onClick={toggleMenu}>
-            About Us
-          </Link>
+          {/* ABOUT US DROPDOWN (Mobile) */}
+          <div className="relative">
+            <button
+              onClick={() =>
+                setIsMobileDropdownOpen(
+                  isMobileDropdownOpen === "about-us" ? "" : "about-us",
+                )
+              }
+              className="uppercase focus:outline-none"
+            >
+              About Us
+            </button>
+            {isMobileDropdownOpen === "about-us" && (
+              <div
+                className="flex flex-col pl-4"
+                onClick={() =>
+                  setIsMobileDropdownOpen(
+                    isMobileDropdownOpen === "about-us" ? "" : "about-us",
+                  )
+                }
+              >
+                <Link
+                  to="/about-us"
+                  className="block p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={toggleMenu}
+                >
+                  Our Team
+                </Link>
+                <Link
+                  to="/our-collectives"
+                  className="block p-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={toggleMenu}
+                >
+                  Our Collectives
+                </Link>
+              </div>
+            )}
+          </div>
+
           <Link to="/blogs" onClick={toggleMenu}>
             Blogs
           </Link>
-          {/* <Link to="/about-us" onClick={toggleMenu}>
-            About Us
-          </Link> */}
           <div className="relative">
             <button
-              onClick={toggleMobileDropdown}
+              onClick={() =>
+                setIsMobileDropdownOpen(
+                  isMobileDropdownOpen === "services" ? "" : "services",
+                )
+              }
               className="uppercase focus:outline-none"
             >
               Services
             </button>
-            {isMobileDropdownOpen && (
+            {isMobileDropdownOpen === "services" && (
               <div
                 className="flex flex-col pl-4"
-                onClick={toggleMobileDropdown}
+                onClick={() =>
+                  setIsMobileDropdownOpen(
+                    isMobileDropdownOpen === "services" ? "" : "services",
+                  )
+                }
               >
                 <Link
                   to="/events"
