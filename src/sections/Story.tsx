@@ -16,7 +16,7 @@ function Story() {
               Evening or dusk. The time when the sun starts to set and the sky
               is filled with a myriad of colours
             </div>
-            <p className="">
+            <p className="text-l">
               Saanjh is a mental health service provider, born from the desire
               to make mental health care intersectional and accessible. We chose
               the name Saanjh because of the visual nature of the word, and the
