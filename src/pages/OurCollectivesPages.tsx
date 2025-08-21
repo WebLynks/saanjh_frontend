@@ -11,7 +11,7 @@ import ppt from "../assets/images/presentation-stand-svgrepo-com.svg";
 import ourcollectives from "../assets/images/our_collectives.jpeg";
 // For animation, install and import AOS for scroll-based reveal effects
 import saanjh_logo_notext from "../assets/images/saanjh_logo.png";
-import ourcollectives_hero from "../assets/images/ourcollectives_hero.png";
+import ourcollectives_hero from "../assets/images/ourcollectives_hero.webp";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
