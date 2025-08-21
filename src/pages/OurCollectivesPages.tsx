@@ -78,8 +78,7 @@ export default function OurCollectivesPage() {
             data-aos="fade-up"
             data-aos-delay="250"
           >
-            Your space for collaborative & transformative therapy—by therapists,
-            for therapists.
+            A space for collaboration and community - for therapists, by therapists
           </p>
           <a
             href="mailto:saanjhwellness@gmail.com"
@@ -345,11 +344,11 @@ export default function OurCollectivesPage() {
           <div className="flex w-full flex-col items-stretch gap-0 md:flex-row md:gap-8">
             {[
               {
-                label: "Eligibility",
+                label: "1. Eligibility",
                 icon: (
                   <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
                     <span className="text-2xl font-extrabold text-sapphire">
-                      1
+                      
                     </span>
                   </span>
                 ),
@@ -362,11 +361,11 @@ export default function OurCollectivesPage() {
                 ),
               },
               {
-                label: "Quick 3-step process",
+                label: "2. Quick 3-step process",
                 icon: (
                   <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
                     <span className="text-2xl font-extrabold text-mango">
-                      2
+                      
                     </span>
                   </span>
                 ),
@@ -385,10 +384,10 @@ export default function OurCollectivesPage() {
                 ),
               },
               {
-                label: "Membership fee",
+                label: "3. Membership fee",
                 icon: (
                   <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
-                    <span className="text-2xl font-extrabold text-iris">3</span>
+                    <span className="text-2xl font-extrabold text-iris"></span>
                   </span>
                 ),
                 desc: (
