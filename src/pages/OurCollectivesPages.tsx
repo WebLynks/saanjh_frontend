@@ -346,7 +346,7 @@ export default function OurCollectivesPage() {
               {
                 label: "1. Eligibility",
                 icon: (
-                  <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
+                  <span className="bg-iris-100 flex w-12 items-center justify-center rounded-full">
                     <span className="text-2xl font-extrabold text-sapphire">
                       
                     </span>
@@ -363,7 +363,7 @@ export default function OurCollectivesPage() {
               {
                 label: "2. Quick 3-step process",
                 icon: (
-                  <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
+                  <span className="bg-iris-100 flex w-12 items-center justify-center rounded-full">
                     <span className="text-2xl font-extrabold text-mango">
                       
                     </span>
@@ -386,7 +386,7 @@ export default function OurCollectivesPage() {
               {
                 label: "3. Membership fee",
                 icon: (
-                  <span className="bg-iris-100 flex h-12 w-12 items-center justify-center rounded-full">
+                  <span className="bg-iris-100 flex w-12 items-center justify-center rounded-full">
                     <span className="text-2xl font-extrabold text-iris"></span>
                   </span>
                 ),
