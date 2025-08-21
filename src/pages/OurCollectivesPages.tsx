@@ -7,8 +7,11 @@ import network from "../assets/images/network-server-svgrepo-com.svg";
 import bulb from "../assets/images/bulb-electric-energy-svgrepo-com.svg";
 import ppt from "../assets/images/presentation-stand-svgrepo-com.svg";
 import hero from "../assets/images/swastik-chakraborty--HM-iX3a5go-unsplash.webp";
-import hiking from "../assets/images/nicolas-weldingh-salLQNuOllw-unsplash.webp";
+// import hiking from "../assets/images/nicolas-weldingh-salLQNuOllw-unsplash.webp";
+import ourcollectives from "../assets/images/our_collectives.jpeg";
 // For animation, install and import AOS for scroll-based reveal effects
+import saanjh_logo_notext from "../assets/images/saanjh_logo.png";
+import ourcollectives_hero from "../assets/images/ourcollectives_hero.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -27,8 +30,6 @@ interface YouTubeVideo {
 }
 
 // Abstract image assets (Unsplash or SVGs)
-const CTA_ABSTRACT =
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80";
 
 export default function OurCollectivesPage() {
   const [therapists, setTherapists] = useState<Therapist[]>([]);
@@ -52,16 +53,17 @@ export default function OurCollectivesPage() {
   return (
     <div className="overflow-x-hidden bg-white font-sans text-gray-900">
       {/* HERO */}
-      <section className="relative flex min-h-[65vh] w-full items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[100vh] w-full items-center justify-center overflow-hidden">
         <img
-          src={hero}
+          src={ourcollectives_hero}
           alt="Abstract hero"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-black/65 via-white/5 to-black/35" />
+        {/* for gradient of black viggnette bg-gradient-to-tr from-black/65 via-white/5 to-black/35 */}
+        <div className="absolute inset-0" />
         <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center justify-center px-4 py-24 text-center">
           <h1
-            className="mb-4 text-5xl font-black text-white drop-shadow-lg md:text-6xl"
+            className="mb-4 text-5xl font-black text-white drop-shadow-lg md:text-8xl"
             data-aos="fade-down"
           >
             Meet Saanjh Collective
@@ -91,7 +93,7 @@ export default function OurCollectivesPage() {
       </section>
 
       {/* VISION / MISSION / VALUES AS FEATURE CARDS */}
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-20 md:grid-cols-3">
+      <section className="mx-auto grid max-w-7xl gap-10 px-5 pt-5 md:pt-10 pb-20  md:grid-cols-3">
         <div
           className="flex flex-col items-center rounded-2xl bg-white p-8 shadow-xl"
           data-aos="fade-up"
@@ -321,7 +323,7 @@ export default function OurCollectivesPage() {
           </div>
           <div className="flex flex-1 items-center">
             <img
-              src={hiking}
+              src={ourcollectives}
               alt="Offerings Abstract"
               className="border-mango-100 animate__animated animate__fadeInRight w-full max-w-md rounded-3xl border-2 shadow"
               data-aos="zoom-in"
@@ -410,12 +412,6 @@ export default function OurCollectivesPage() {
                 <div className="text-base text-gray-700">{step.desc}</div>
               </div>
             ))}
-          </div>
-          <div className="mt-8 text-center font-semibold text-pink-900">
-            <span className="bg-mango-50 inline-block rounded-xl px-4 py-2">
-              Note: Currently prioritizing therapists with at least 1 year of
-              experience. Mentorship track for freshers coming soon!
-            </span>
           </div>
         </div>
       </section>
@@ -518,11 +514,12 @@ export default function OurCollectivesPage() {
         <div className="relative flex w-full max-w-5xl flex-col items-center gap-14 rounded-3xl border-none bg-white/95 p-12 shadow-xl backdrop-blur-md md:flex-row">
           {/* Large, eye-catching illustration */}
           <img
-            src={CTA_ABSTRACT}
+            src={saanjh_logo_notext}
             alt="Abstract Join"
-            className="h-52 w-52 max-w-[280px] rounded-3xl border-4 border-white/50 object-cover shadow-lg"
+            // use shadow-lg for shadow
+            className="h-52 w-52 max-w-[280px] rounded-3xl border-4 border-white/50 object-cover"
             style={{
-              background: "linear-gradient(120deg, #ffdba8 0%, #ecbcdf 75%)",
+              // background: "linear-gradient(120deg, #ffdba8 0%, #ecbcdf 75%)",
             }}
           />
 
@@ -531,7 +528,7 @@ export default function OurCollectivesPage() {
               Want to join the Collective?
             </h3>
             <p className="mb-8 text-xl text-gray-700">
-              Reach out and start the conversation—be a part of the movement.
+              Reach out and start the conversation.
             </p>
             <a
               href="mailto:saanjhwellness@gmail.com"

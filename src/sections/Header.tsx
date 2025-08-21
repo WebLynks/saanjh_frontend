@@ -79,8 +79,7 @@ function Header() {
             </Link>
             {/* ABOUT US DROPDOWN (Desktop) */}
             <div className="group relative inline-block">
-              <Link
-                to="/about-us"
+              <button
                 className="inline-flex items-center uppercase focus:outline-none"
                 onClick={toggleMenu}
               >
@@ -98,7 +97,7 @@ function Header() {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg> */}
-              </Link>
+              </button>
               <div className="absolute right-0 z-20 mt-2 w-56 rounded-md bg-pink-50 opacity-0 shadow-lg ring-1 ring-black ring-opacity-5 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="py-1" role="menu">
                   <Link
@@ -113,7 +112,7 @@ function Header() {
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={toggleMenu}
                   >
-                    Our Collectives
+                    Our Collective
                   </Link>
                 </div>
                 <div className="absolute -top-2 right-0 h-0 w-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-pink-50"></div>
@@ -221,7 +220,7 @@ function Header() {
                   className="block p-2 text-sm text-gray-700 hover:bg-gray-100"
                   onClick={toggleMenu}
                 >
-                  Our Collectives
+                  Our Collective
                 </Link>
               </div>
             )}

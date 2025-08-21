@@ -40,8 +40,8 @@ export default function CollectivesPage() {
     <div className="text-gray-900">
       {/* Hero */}
       <div className="mt-16 flex h-[50vh] w-full items-center justify-center bg-[url('/individual_therapy_header.png')] bg-cover bg-center md:mt-0">
-        <h1 className="font-sans-black px-4 md:px-0 text-5xl text-white drop-shadow-lg">
-          Discover Our Collectives
+        <h1 className="font-sans-black px-4 md:px-0 text-6xl text-white drop-shadow-lg">
+          Individual Therapy
         </h1>
       </div>
 
@@ -55,23 +55,13 @@ export default function CollectivesPage() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="mb-4 font-sans-black text-5xl">
+          <h2 className="mb-10 font-sans-black text-5xl">
             What Therapy Means To Us
           </h2>
           <p className="text-md leading-relaxed">
-            At Saanjh, therapy is not just about addressing problems — it's a
-            journey of discovering your truest self. We believe that healing
-            starts when you're truly heard, seen, and supported.
+            Seeking therapy is usually a difficult space, and one full of questions and confusions. While it is a process of self-improvement, it is also a process of self-discovery and holistic development. 
             <br></br>
-            Our therapists are here to offer more than just tools — they bring
-            empathy, cultural sensitivity, and a deep commitment to walking
-            alongside you in your unique path. Whether you're navigating grief,
-            trauma, identity, or simply seeking clarity, this space is yours to
-            explore safely and authentically.
-            <br></br>
-            Therapy, for us, is a collaborative process — a partnership where
-            growth happens gently, trust is built intentionally, and every step
-            forward is celebrated.
+            At Saanjh, we believe therapy to be a collaborative space between the therapist and the client. We believe the clients to be the experts of their lives, and the therapists a witness to, and facilitator of change in, their journey. We take a social justice and anti-oppressive stance to therapy, and strongly believe in the power of community.
           </p>
         </div>
       </div>
