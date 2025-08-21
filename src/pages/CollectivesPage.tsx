@@ -39,14 +39,14 @@ export default function CollectivesPage() {
   return (
     <div className="text-gray-900">
       {/* Hero */}
-      <div className="mt-16 flex h-[100vh] w-full items-center justify-center bg-[url('/individual_therapy_header.png')] bg-cover bg-center md:mt-0">
-        <h1 className="font-sans-black px-4 md:px-0 text-8xl text-white drop-shadow-lg">
+      <div className="mt-16 flex h-[45vh] md:h-[100vh] w-full items-center justify-center bg-[url('/individual_therapy_header.png')] bg-cover bg-center md:mt-0">
+        <h1 className="font-sans-black px-4 md:px-0 text-5xl md:text-8xl text-white drop-shadow-lg text-center">
           Individual Therapy
         </h1>
       </div>
 
       {/* What Therapy Means To Us */}
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 md:px-0 pb-8 pt-20 md:grid-cols-2">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 md:px-0 pb-8 pt-20 md:grid-cols-2 ">
         <div>
           <img
             src="/therapy_visual.png"
