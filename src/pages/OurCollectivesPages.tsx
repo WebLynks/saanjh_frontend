@@ -6,7 +6,7 @@ import smile from "../assets/images/smile-svgrepo-com.svg";
 import network from "../assets/images/network-server-svgrepo-com.svg";
 import bulb from "../assets/images/bulb-electric-energy-svgrepo-com.svg";
 import ppt from "../assets/images/presentation-stand-svgrepo-com.svg";
-import hero from "../assets/images/swastik-chakraborty--HM-iX3a5go-unsplash.webp";
+// import hero from "../assets/images/swastik-chakraborty--HM-iX3a5go-unsplash.webp";
 // import hiking from "../assets/images/nicolas-weldingh-salLQNuOllw-unsplash.webp";
 import ourcollectives from "../assets/images/our_collectives.jpeg";
 // For animation, install and import AOS for scroll-based reveal effects
