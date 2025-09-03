@@ -62,7 +62,7 @@ function Footer() {
               <div className="space-y-4 text-gray-400">
                 <div>
                   <a
-                    href="https://www.instagram.com/saanjhwellness/"
+                    href="https://www.instagram.com/saanjh1628?igsh=MzZ3YjU0ZzJnOHdm"   
                     target="_blank"
                     rel="noopener noreferrer"
                   >
